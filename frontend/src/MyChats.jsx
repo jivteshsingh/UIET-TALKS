@@ -31,15 +31,17 @@ function MyChats({chats,setChats,fetchAgain}) {
   }
 
   useEffect(() => {
+  setLoggedUser(JSON.parse(localStorage.getItem("userInfo")));
+    fetchChats();
+}, [fetchAgain]);
+
+  useEffect(() => {
     setSelectedChat("");
   },[])
 
 
 
-  useEffect(() => {
-  setLoggedUser(JSON.parse(localStorage.getItem("userInfo")));
-    fetchChats();
-}, [fetchAgain]);
+
 
 
  return(
