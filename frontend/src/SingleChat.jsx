@@ -12,7 +12,7 @@ import io from "socket.io-client";
 import Lottie from 'react-lottie';
 import animationData from "./typing.json"
 
-const ENDPOINT = "https://uiet-talks.herokuapp.com/";
+const ENDPOINT = "http://localhost:4000/";
 const defaultOptions = {
       loop: true,
       autoplay: true,
