@@ -9,7 +9,7 @@
     "frontend": "npm start --prefix frontend",
     "frontendinstall": "npm install --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "render-postbuild": "npm install --prefix frontend && npm run build -- prefix frontend"
+    "render-postbuild": "npm install && cd ../frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
