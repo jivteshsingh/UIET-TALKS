@@ -6,10 +6,7 @@
   "scripts": {
     "start" : "node backend/app.js",
     "server": "nodemon backend/app.js",
-    "frontend": "npm start --prefix frontend",
-    "frontendinstall": "npm install --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
-    "render-postbuild": "npm install && cd ./frontend && npm install && npm run build"
+    "build": "npm install --legacy-peer-deps && npm install --legacy-peer-deps --prefix frontend && npm run build --prefix frontend"
   },
   "author": "",
   "license": "ISC",

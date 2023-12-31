@@ -26,6 +26,7 @@ function MyChats({chats,setChats,fetchAgain}) {
         setChats(data);
 
     } catch (error) {
+      console.log(error);
         toast({ title: "Error Occured!", description:"Failed to Load the Chats", status: "error", duration: 5000, isClosable: true, position: "bottom-left", });
     }
   }
